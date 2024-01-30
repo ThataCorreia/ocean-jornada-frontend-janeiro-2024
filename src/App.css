@@ -1,16 +1,38 @@
 .card {
-  border: 1px solid black;
+  border: 1px solid rgb(245, 245, 245);
   border-radius: 10px;
   padding: 16px;
   margin: 16px;
-  box-shadow: 4px 4px black;
+  box-shadow: 4px 4px #e7e1e1;
   text-align: center;
+  cursor: pointer;
 }
 
 .card > h2 {
   font-size: 32px;
+  border-left: 6px solid #A9D3E9;
 }
 
 .card > img {
   border-radius: 10px;
+}
+
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap:8px;
+  margin-bottom: 24px;
+  max-width: 300px;
+  justify-content: center;
+
+}
+
+.tag {
+  background: white;
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 4px 12px;
+
 }
