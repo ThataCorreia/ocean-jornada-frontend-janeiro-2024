@@ -2,6 +2,7 @@ import './App.css'
 import Card from './components/Card/Card'
 
 function App() {
+  // carregamento de dados diretamente via codigo
   const item1 = {
     name: 'Rick Sanchez',
     image: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg'
@@ -23,6 +24,13 @@ function App() {
   }
 
 const itens = [item1, item2, item3, item4]
+
+// Carregamento de dados via API (Backend)
+
+const apiUrl = 'https://rickandmortyapi.com/api/character/';
+
+fetch(apiUrl)
+
 
   return (
     <>
